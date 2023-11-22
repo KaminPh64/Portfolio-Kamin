@@ -1,0 +1,124 @@
+.home-hero-about {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-column-gap: 5rem;
+}
+
+.about-item {
+  width: auto;
+  height: auto;
+}
+
+.about-item > article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-item > article > div > h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.about-item > article > div > p {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  word-spacing: 2.5px;
+  word-wrap: break-word;
+}
+
+.about-item > article > div > .about-contact {
+  margin-top: 3rem;
+  grid-column-gap: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.social-links-wrap{
+    grid-column-gap: 1.3rem;
+    align-items: center;
+    display: flex;
+}
+.social-links-wrap > i {
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+.social-links-wrap > i:hover{
+    transform: translateY(-5px);
+}
+
+.home-hero-image {
+  display: flex;
+  justify-content: right;
+}
+
+.home-hero-image img {
+  object-fit: cover;
+  /* width: 100%; */
+  max-width: 100%;
+  height: 36rem;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+
+.home-about-subtitle {
+  max-width: 46rem;
+  margin-left: auto;
+  padding-top: 4rem;
+}
+
+.text-size-large {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about-subtitle-section{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-column-gap: 3rem;
+}
+
+.about-subtitle-section > p{
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+  .home-hero-about {
+    grid-template-columns: 1fr;
+  }
+  .home-hero-image img {
+    width: 100%;
+  }
+  .about-item > article > div > h1 {
+    font-size: 2.7rem;
+  }
+  .about-item > article > div > .about-contact {
+    margin: 3rem 0;
+    grid-row-gap: 2.5rem;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .text-size-large{
+    font-size: 1.7rem;
+  }
+  .home-about-subtitle{
+    padding-top: 0;
+  }
+  .about-subtitle-section{
+    flex-direction: column;
+    grid-row-gap: 2.5rem;
+  }
+}
