@@ -1,0 +1,27 @@
+.contect-component {
+  width: auto;
+  background-color: #f7f5ed;
+}
+
+.heading-xlarge {
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+
+.contect-inside {
+  color: #121111;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 479px) {
+}

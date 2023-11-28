@@ -1,0 +1,21 @@
+import React from "react";
+import "../../css/content/contect.css";
+function Contect() {
+  return (
+    <>
+      <div className="contect-component">
+        <div className="padding-huge">
+          <div className="contect-inside">
+            <h3 className="heading-xlarge">Let’s work together</h3>
+            <p>
+              Let's embark on a creative journey together, turning your ideas
+              into captivating visuals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Contect;

@@ -13,7 +13,7 @@
 
 body {
   color: #f7f5ed;
-  background-color: #121111;
+  /* background-color: #f7f5ed; */
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -23,11 +23,12 @@ body {
   background-color: #121111;
   position: relative;
   overflow: hidden;
+  margin-bottom: 15rem;
 }
 
 .page-padding {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 .padding-vertical {
   padding: 1rem 0px;
@@ -43,6 +44,7 @@ body {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+  /* background-color: #121111; */
 }
 
 .header{
@@ -55,6 +57,10 @@ body {
 @media only screen and (max-width: 991px) {
   .container-large {
     max-width: 100%;
+  }
+  .page-padding {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
