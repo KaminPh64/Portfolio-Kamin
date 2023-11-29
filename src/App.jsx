@@ -45,7 +45,12 @@ function App() {
         </div>
         <Contect callRef={contectRef} />
       </div>
-      <Footer />
+      <Footer
+        callaboutRef={aboutRefScroll}
+        callskillRef={skillRefScroll}
+        callworkRef={workRefScroll}
+        callcontectRef={contectRefScroll}
+      />
     </>
   );
 }

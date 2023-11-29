@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../css/layout/footer.css";
 
-function Footer() {
+function Footer({ callaboutRef, callskillRef, callworkRef, callcontectRef }) {
   return (
     <div className="footer-component ">
       <div className="page-padding">
@@ -18,10 +18,10 @@ function Footer() {
           </div>
           <div className="footer-bottom">
             <ul>
-              <li>About</li>
-              <li>Skill</li>
-              <li>Work</li>
-              <li>Contect</li>
+              <li onClick={callaboutRef}>About</li>
+              <li onClick={callskillRef}>Skill</li>
+              <li onClick={callworkRef}>Work</li>
+              <li onClick={callcontectRef}>Contect</li>
             </ul>
           </div>
         </div>
