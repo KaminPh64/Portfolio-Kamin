@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
 
 import Narbar from "./components/layouts/narbar/Narbar.jsx";
@@ -9,19 +9,42 @@ import Contect from "./components/content/Contect.jsx";
 import Footer from "./components/layouts/footer/Footer.jsx";
 
 function App() {
+  const aboutRef = useRef(null);
+  const skillRef = useRef(null);
+  const workRef = useRef(null);
+  const contectRef = useRef(null);
+
+  const aboutRefScroll = () => {
+    aboutRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  const skillRefScroll = () => {
+    skillRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  const workRefScroll = () => {
+    workRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  const contectRefScroll = () => {
+    contectRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <>
       <div className="main-wrapper">
         <div className="container-large">
-          <Narbar />
+          <Narbar
+            callaboutRef={aboutRefScroll}
+            callskillRef={skillRefScroll}
+            callworkRef={workRefScroll}
+            callcontectRef={contectRefScroll}
+          />
           <div className="page-padding">
-            <About />
-            <Skill />
-            <Work />
+            <About callRef={aboutRef} />
+            <Skill callRef={skillRef} />
+            <Work callRef={workRef} />
           </div>
         </div>
-        <Contect />
-      </div>    
+        <Contect callRef={contectRef} />
+      </div>
       <Footer />
     </>
   );

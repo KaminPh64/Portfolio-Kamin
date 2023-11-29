@@ -3,11 +3,13 @@ import "../../css/content/work.css";
 
 import imgKamin from "../../img/kamin4.jpg";
 
-function Work() {
+function Work({ callRef }) {
   return (
     <>
       <div className="padding-medium">
-        <h2 className="header">Work</h2>
+        <h2 className="header" ref={callRef}>
+          Work
+        </h2>
 
         <div className="work-main">
           <div className="work-main-image">

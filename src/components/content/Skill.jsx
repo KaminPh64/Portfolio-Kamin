@@ -4,11 +4,11 @@ import "../../css/content/skill.css";
 import * as FaIcons from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 
-function Skill() {
+function Skill({ callRef }) {
   return (
     <>
       <div className="padding-huge">
-        <h2 className="header">Skills</h2>
+        <h2 className="header" ref={callRef}>Skills</h2>
         <div className="skill-grid">
           <div className="skill-item">
             <div className="skill-item-icon-circle">

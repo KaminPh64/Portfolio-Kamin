@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "../../../css/layout/navbar.css";
 
-function Narbar() {
+function Narbar({ callaboutRef, callskillRef, callworkRef, callcontectRef }) {
   const navRef = useRef();
   const [isNavOpen, setNavOpen] = useState(false);
 
@@ -17,10 +17,10 @@ function Narbar() {
           <div className="navbar-banner">KAMIN.</div>
           <nav className="navbar-menu">
             <ul>
-              <li>About</li>
-              <li>Skill</li>
-              <li>Work</li>
-              <li>Contect</li>
+              <li onClick={callaboutRef}>About</li>
+              <li onClick={callskillRef}>Skill</li>
+              <li onClick={callworkRef}>Work</li>
+              <li onClick={callcontectRef}>Contect</li>
             </ul>
             <div className="navbar-dropdown">
               <button onClick={showNav} className="btn-navbar">
@@ -36,10 +36,10 @@ function Narbar() {
       </div>
       <nav ref={navRef} className="navbar-dropdown navbar-menu-inside ">
         <ul>
-          <li>About</li>
-          <li>Skill</li>
-          <li>Work</li>
-          <li>Contect</li>
+          <li onClick={callaboutRef}>About</li>
+          <li onClick={callskillRef}>Skill</li>
+          <li onClick={callworkRef}>Work</li>
+          <li onClick={callcontectRef}>Contect</li>
         </ul>
       </nav>
     </navbar>

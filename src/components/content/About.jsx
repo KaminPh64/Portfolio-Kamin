@@ -4,7 +4,7 @@ import "../../css/content/about.css";
 import Eyeball from "../EyeballComponent";
 import imgKamin from "../../img/kamin1.jpg";
 
-function About() {
+function About({ callRef }) {
   return (
     <>
       <div className="padding-huge">
@@ -39,7 +39,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="home-about-subtitle">
+      <div className="home-about-subtitle" ref={callRef}>
         <aside>
           <p className="text-size-large">
             With over 8 years of design experience, I bring a creative edge to
