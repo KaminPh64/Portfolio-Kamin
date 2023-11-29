@@ -1,9 +1,8 @@
 import React from "react";
 import "../../css/content/about.css";
 
-import imgKamin from "../../img/kamin1.jpg";
-
 import Eyeball from "../EyeballComponent";
+import imgKamin from "../../img/kamin1.jpg";
 
 function About() {
   return (

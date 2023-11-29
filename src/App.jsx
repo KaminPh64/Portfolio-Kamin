@@ -21,7 +21,7 @@ function App() {
           </div>
         </div>
         <Contect />
-      </div>
+      </div>    
       <Footer />
     </>
   );
