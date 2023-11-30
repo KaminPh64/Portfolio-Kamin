@@ -25,9 +25,6 @@
   width: 30rem;
 }
 
-@media only screen and (max-width: 991px) {
-}
-
 @media only screen and (max-width: 767px) {
   .heading-xlarge {
     font-size: 2.7rem;
@@ -35,7 +32,4 @@
   .contect-inside p{
     width: auto;
   }
-}
-
-@media only screen and (max-width: 479px) {
 }

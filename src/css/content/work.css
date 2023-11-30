@@ -96,9 +96,6 @@ img {
   }
 }
 
-@media only screen and (max-width: 767px) {
-}
-
 @media only screen and (max-width: 479px) {
   .work-itme-detail h3,
   .work-main h3 {

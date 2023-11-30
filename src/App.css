@@ -13,7 +13,6 @@
 
 body {
   color: #f7f5ed;
-  /* background-color: #f7f5ed; */
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -44,7 +43,6 @@ body {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: #121111; */
 }
 
 .header {
