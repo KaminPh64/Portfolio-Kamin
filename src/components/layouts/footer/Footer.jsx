@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../css/layout/footer.css";
+import SocialLinks from "../../SocialLinks";
 
 function Footer({ callaboutRef, callskillRef, callworkRef, callcontectRef }) {
   return (
@@ -8,13 +9,7 @@ function Footer({ callaboutRef, callskillRef, callworkRef, callcontectRef }) {
         <div className="footer-inside">
           <div className="footer-top">
             <h3>KAMIN.</h3>
-            <div className="social-links-wrap">
-              <i className="bi bi-github"></i>
-              <i className="bi bi-facebook"></i>
-              <i className="bi bi-line"></i>
-              <i className="bi bi-instagram"></i>
-              <i className="bi bi-twitter-x"></i>
-            </div>
+            <SocialLinks />
           </div>
           <div className="footer-bottom">
             <ul>

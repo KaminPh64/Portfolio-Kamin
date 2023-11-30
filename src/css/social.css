@@ -1,0 +1,15 @@
+.social-links-wrap{
+    grid-column-gap: 1.3rem;
+    align-items: center;
+    display: flex;
+}
+
+.social-links-wrap a {
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.social-links-wrap a:hover{
+    transform: translateY(-5px);
+}

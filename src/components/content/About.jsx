@@ -3,6 +3,7 @@ import "../../css/content/about.css";
 
 import Eyeball from "../EyeballComponent";
 import imgKamin from "../../img/kamin1.jpg";
+import SocialLinks from "../SocialLinks";
 
 function About({ callRef }) {
   return (
@@ -12,20 +13,15 @@ function About({ callRef }) {
           <div className="about-item">
             <article>
               <div>
-                <h1>Web designer & webflow developer</h1>
+                <h1>Web developer & UX/UI designer</h1>
                 <p>
-                  Diving into the world of design, I've had the privilege of
-                  working on diverse projects, each leaving a unique mark.
+                  Passionate about crafting extraordinary and unforgettable
+                  digital experiences, I'm poised to bring your ideas and
+                  aspirations to life in the digital realm.
                 </p>
                 <div className="about-contact">
                   <Eyeball name={""} />
-                  <div className="social-links-wrap">
-                    <i className="bi bi-github"></i>
-                    <i className="bi bi-facebook"></i>
-                    <i className="bi bi-line"></i>
-                    <i className="bi bi-instagram"></i>
-                    <i className="bi bi-twitter-x"></i>
-                  </div>
+                  <SocialLinks />
                 </div>
               </div>
             </article>
@@ -42,20 +38,20 @@ function About({ callRef }) {
       <div className="home-about-subtitle" ref={callRef}>
         <aside>
           <p className="text-size-large">
-            With over 8 years of design experience, I bring a creative edge to
-            every project I touch. My design journey has led me to collaborate
-            with startups and renowned brands alike, where I've crafted visuals
-            that tell compelling stories.
+            With a passion to be a part of the design and web development world,
+            even without experience, we are ready to bring creative ideas to
+            every project. We have the ability to collaborate with startups and
+            renowned brands, ready to create compelling and interesting works.
           </p>
           <div className="about-subtitle-section">
             <p>
-              Diving into the world of design, I've had the privilege of working
-              on diverse projects, each leaving a unique mark.
+              With a passion for entering the realm of web design and
+              development, I am ready to contribute to creativity in every
+              project.
             </p>
             <p>
-              My approach is driven by a commitment to capture the essence of
-              each project, whether it's web design, branding, or print
-              materials.
+              I'm poised to bring your ideas and aspirations to life in the
+              digital realm.
             </p>
           </div>
         </aside>
